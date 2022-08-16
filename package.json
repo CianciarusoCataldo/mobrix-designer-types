@@ -1,0 +1,40 @@
+{
+  "name": "mobrix-designer-types",
+  "version": "1.0.0",
+  "description": "Types definitions to easily work with MoBrix-designer system",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "config/rollup.build.config.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CianciarusoCataldo/mobrix-designer-types.git"
+  },
+  "author": "Cataldo Cianciaruso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CianciarusoCataldo/mobrix-designer-types/issues"
+  },
+  "homepage": "https://github.com/CianciarusoCataldo/mobrix-designer-types#readme",
+  "peerDependencies": {
+    "@types/react": ">=16",
+    "mobrix-engine-types": "^1.0.1",
+    "typescript": "^4.2.X"
+  },
+  "devDependencies": {
+    "@types/react": ">=16",
+    "mobrix-engine-types": "^1.0.1",
+    "rollup": "^2.44.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "test": "echo \"No test requested\" && exit 1",
+    "build": "rollup -c config/rollup.build.config.js",
+    "check-types": "tsc"
+  }
+}
